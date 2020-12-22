@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Ignored tests",
+    "matchedStatuses": ["skipped"]
+  },
+  {
+    "name": "Product defects",
+    "matchedStatuses": ["failed"]
+  },
+  {
+    "name": "Broken tests",
+    "matchedStatuses": ["broken"]
+  },
+  {
+    "name": "Expected condition failed",
+    "matchedStatuses": ["broken"],
+    "messageRegex": ".*Expected condition failed.*"
+  },
+  {
+    "name": "NO SUCH ELEMENT",
+    "matchedStatuses": ["broken"],
+    "messageRegex": ".*no such element.*"
+  },
+  {
+    "name": "ELEMENT CLICK INTERCEPTED",
+    "matchedStatuses": ["broken"],
+    "messageRegex": ".*element click intercepted.*"
+  }
+]
