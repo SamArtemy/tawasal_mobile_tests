@@ -7,7 +7,7 @@
     <groupId>ae.tawasal</groupId>
     <artifactId>mobile-ui-tests</artifactId>
     <version>1.0-SNAPSHOT</version>
-r
+
     <properties>
         <testng.suites.path>src\test\resources\suites\</testng.suites.path>
         <defaultSuite>AllPackages.xml</defaultSuite>
@@ -85,12 +85,6 @@ r
             <groupId>com.konghq</groupId>
             <artifactId>unirest-java</artifactId>
             <version>3.7.02</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc -->
-        <dependency>
-            <groupId>org.xerial</groupId>
-            <artifactId>sqlite-jdbc</artifactId>
-            <version>3.32.3.1</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.aeonbits.owner/owner -->
         <dependency>
@@ -178,6 +172,14 @@ r
                         </goals>
                         <configuration>
                             <outputDirectory>target/allure-results</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>src/test/resources</directory>
+                                    <includes>
+                                        <include>categories.json</include>
+                                    </includes>
+                                </resource>
+                            </resources>
                         </configuration>
                     </execution>
                 </executions>
