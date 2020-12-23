@@ -3,7 +3,6 @@
 * [Allure](https://docs.qameta.io/allure/#_commandline) - Для генерации отчета
 * [Maven](https://maven.apache.org/download.cgi) - Менеджмент зависимостей
 * [JDK11](https://openjdk.java.net/projects/jdk/11/) - OpenJDK 11
-* [Sqlite3](https://www.sqlite.org/download.html) - SQL database engine
 * [Appium](http://appium.io/) - Appium server
 
 ### Перед тестами:
